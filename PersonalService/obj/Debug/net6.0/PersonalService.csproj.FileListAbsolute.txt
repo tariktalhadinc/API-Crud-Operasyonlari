@@ -1,0 +1,15 @@
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\PersonalService.csproj.AssemblyReference.cache
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\PersonalService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\PersonalService.AssemblyInfoInputs.cache
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\PersonalService.AssemblyInfo.cs
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\PersonalService.csproj.CoreCompileInputs.cache
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\bin\Debug\net6.0\PersonalService.exe
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\bin\Debug\net6.0\PersonalService.deps.json
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\bin\Debug\net6.0\PersonalService.runtimeconfig.json
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\bin\Debug\net6.0\PersonalService.dll
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\bin\Debug\net6.0\PersonalService.pdb
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\PersonalService.dll
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\refint\PersonalService.dll
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\PersonalService.pdb
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\PersonalService.genruntimeconfig.cache
+C:\Users\t.dinc\Desktop\Projects\ASPNET Core\PersonalService\obj\Debug\net6.0\ref\PersonalService.dll
