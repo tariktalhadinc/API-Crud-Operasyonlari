@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "KXno3WNisQVNIPBq4N9OXGHisgY2IPnuE47xywlx6LTozzUVhUPH46Mzqm9Mryb5rpKlvd9Eo19BnRVWtmTmQA==",
+  "dgSpecHash": "u6CgBNSyRvN10ZtuQmYjBiftt123PdASN982sRSGIGf5r0QtiA3IEi83xwqjMCBJ5ypTx4enHRfboEtA1e4GpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\t.dinc\\Desktop\\Projects\\ASPNET Core\\PersonalService\\PersonalService.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\PersonalService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\t.dinc\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\t.dinc\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\t.dinc\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\t.dinc\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\t.dinc\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\t.dinc\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
   "logs": []
 }

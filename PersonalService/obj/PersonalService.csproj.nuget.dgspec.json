@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\t.dinc\\Desktop\\Projects\\ASPNET Core\\PersonalService\\PersonalService.csproj": {}
+    "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\PersonalService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\t.dinc\\Desktop\\Projects\\ASPNET Core\\PersonalService\\PersonalService.csproj": {
+    "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\PersonalService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\t.dinc\\Desktop\\Projects\\ASPNET Core\\PersonalService\\PersonalService.csproj",
+        "projectUniqueName": "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\PersonalService.csproj",
         "projectName": "PersonalService",
-        "projectPath": "C:\\Users\\t.dinc\\Desktop\\Projects\\ASPNET Core\\PersonalService\\PersonalService.csproj",
+        "projectPath": "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\PersonalService.csproj",
         "packagesPath": "C:\\Users\\t.dinc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\t.dinc\\Desktop\\Projects\\ASPNET Core\\PersonalService\\obj\\",
+        "outputPath": "C:\\Users\\t.dinc\\Desktop\\C#\\PersonalService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\t.dinc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -51,6 +57,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
