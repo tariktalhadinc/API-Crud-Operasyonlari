@@ -1,85 +1,64 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PersonalService.Interfaces;
 using System.Security.Cryptography.Xml;
 
 namespace PersonalService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+
+
     public class PersonalControllers : ControllerBase
     {
-        private static List<Personal> mockPersonal = new List<Personal>()
-        {
-           new Personal()
-           {
-               Id = 1,
-               NationalId = "13595581052",
-               Name = "Tarık Talha",
-               Surname = "DİNÇ",
-               Age = 20,
-               Salary = 5500,
-           },
+        private readonly IPersonalService _personalService;
 
-           new Personal()
-           {
-               Id = 2,
-               NationalId = "13595581054",
-               Name = "Görkem",
-               Surname = "Tekin",
-               Age = 20,
-               Salary = 7500,
-           }
-        };
+        public PersonalControllers(IPersonalService personalService)
+        {
+            _personalService = personalService;
+        }
 
         [HttpGet]
-        [Route("PersonalList")]
-        public async Task<ActionResult<Personal>> GetPersonals()
+        [Route("ListPersonal")]
+        public async Task<ActionResult<Personal>> Get()
         {
-            return Ok(mockPersonal);
+            return Ok(_personalService.Get());
         }
 
         [HttpGet]
         [Route("SearchPersonal")]
 
-        public async Task<ActionResult<Personal>> GetPersonals(string nationalId)
+        public async Task<ActionResult<Personal>> Search(string nationalId)
         {
-          var Personal = mockPersonal.Find(x => x.NationalId == nationalId);
-          if (Personal == null)
-              return BadRequest("No Data");
-          return Ok(Personal);
+            var personel = _personalService.Search(nationalId);
+            if (personel == null)
+                return BadRequest("No Data");
+            return Ok(personel);
         }
-        
+
         [HttpPost]
         [Route("AddPersonal")]
-        public async Task<ActionResult<bool>> AddPersonals(Personal personal)
+        public async Task<ActionResult<bool>> Add(Personal personal)
         {
-          var tempPersonel = personal;
-          tempPersonel.Id = mockPersonal.Count() + 1;
-          mockPersonal.Add(tempPersonel);
-          return Ok(true);
+            var tempPersonel = personal;
+            _personalService.Add(tempPersonel);
+            return Ok(true);
         }
 
         [HttpPut]
         [Route("UpdatePersonal")]
-        public async Task<ActionResult<Personal>> UpdatePersonals(Personal request)
+        public async Task<ActionResult<Personal>> Update(Personal request)
         {
-          var Personal = mockPersonal.Find(x => x.Id == request.Id);
-          if (Personal == null)
-              return BadRequest("No personal Data");
-          Personal.Name = request.Name;
-          Personal.Surname = request.Surname;
-          return Ok(Personal);
+            _personalService.Update(request);
+            return BadRequest("No personal Data");
+            return Ok();
         }
 
         [HttpDelete]
         [Route("DeletePersonal")]
-        public async Task<ActionResult<Personal>> DeletePersonals(Personal request)
+        public async Task<ActionResult<Personal>> Delete(Personal request)
         {
-          var personal = mockPersonal.Find(x => x.Id == request.Id);
-          if (personal == null)
-              return BadRequest("No personal found");
-
-          mockPersonal.Remove(personal);
-          return Ok(personal);
-        }   
+            _personalService.Delete(request);
+            return Ok();
+        }
     }
 }
